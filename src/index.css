@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Natural Tones core theme colors mapped onto current Tailwind color variables */
+  --color-slate-50: #FDFCF8;      /* Warm soft ivory backdrop */
+  --color-slate-100: #F5F5F0;     /* Soft sand gray light */
+  --color-slate-150: #E6E2D3;     /* Standard sand outline */
+  --color-slate-200: #E6E2D3;     /* Sand border */
+  --color-slate-300: #D6D2C4;     /* Medium sand gray */
+  --color-slate-400: #A19D8E;     /* Muted Tuscan gray/earthy text */
+  --color-slate-500: #7D8471;     /* Organic Sage accent */
+  --color-slate-600: #6A7060;     /* Deeper Slate Sage */
+  --color-slate-700: #3C3633;     /* Main coffee content / body text */
+  --color-slate-800: #3C3633;     /* main charcoal/coffee text */
+  --color-slate-850: #302B29;     /* Deep earth charcoal */
+  --color-slate-900: #3C3633;     /* Coffee base dark */
+  --color-slate-950: #1C1918;     /* Off-black coffee */
+
+  --color-amber-50: #F9F8F4;      /* Light sand block background */
+  --color-amber-100: #F0EEE6;     /* Secondary warm sand block background */
+  --color-amber-200: #E6E2D3;     /* Sandy border tone */
+  --color-amber-300: #D6D2C4;     /* Medium sand grey */
+  --color-amber-400: #A19D8E;     /* Tuscan text */
+  --color-amber-500: #7D8471;     /* Primary Sage green */
+  --color-amber-600: #6A7060;     /* Deeper Sage accent */
+  --color-amber-700: #7D8471;     /* Primary Sage text/icons */
+  --color-amber-805: #6A7060;
+  --color-amber-800: #7D8471;     /* Primary Sage */
+  --color-amber-900: #3C3633;     /* Coffee accent text */
+  --color-amber-950: #1C1918;     /* Warm dark off-black */
+
+  --color-red-50: #FDF4F2;        /* Soft rust light background */
+  --color-red-100: #F9E2DD;
+  --color-red-200: #F2C4BC;
+  --color-red-500: #A85A4D;       /* Terracotta/rust contrast accent */
+  --color-red-600: #934C40;
+  --color-red-700: #A85A4D;       /* Terracotta contrast */
+  --color-red-800: #3C3633;       /* Earthy */
+  --color-red-850: #262221;
+
+  --color-emerald-50: #F4F6F2;    /* Sage-aligned green */
+  --color-emerald-100: #E5E9E1;
+  --color-emerald-500: #7D8471;   /* Elegant Sage button states */
+  --color-emerald-600: #6A7060;
+  --color-emerald-700: #575D4E;
+  --color-emerald-800: #3E4337;
+}
+
+/* Customized scrollbars for a premium organic editorial feeling */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDFCF8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(125, 132, 113, 0.3);
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(125, 132, 113, 0.6);
+}
+
+/* Animations configurations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.scale-102 {
+  transform: scale(1.015);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Classical Vocal Studio",
+  "description": "An interactive digital companion for classical singers to find vocal coaches, record self-practice or collaborative sessions, take granular score-linked notes, and analyze AI-style vocal feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
